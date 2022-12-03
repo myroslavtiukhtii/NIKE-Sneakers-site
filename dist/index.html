@@ -132,17 +132,60 @@
                 </div>
             </div>
             <img src="./img/hero-image-2.png" alt="Slogan Nike - Just Do it">
+            <div class="upbutton" id="upbtn">
+                <i class="fa-regular fa-circle-up"></i>
+            </div>
         </section>
         <section class="new">
             <div class="container">
+                <div class="modal" id="modal-window">
+                    <button id="close-window">
+                        <i class="fa-regular fa-rectangle-xmark"></i>
+                    </button>
+                    <div class="header">
+                        <h2>Items details</h2>
+                        <div class="item-details">
+                            <img src="" alt="">
+                            <div class="about">
+                                <p>
+                                    Size:
+                                </p>
+                                <p>
+                                    Color:
+                                </p>
+                            </div>
+                        </div>
+                        <h2>Order details</h2>
+                        <div class="order-details">
+                            <ul class="order-details-list">
+                                <li class="order-details-list__item">
+                                    Order number:
+                                </li>
+                                <li class="order-details-list__item">
+                                    Date:
+                                </li>
+                                <li class="order-details-list__item">
+                                    Price:
+                                </li>
+                                <li class="order-details-list__item">
+                                    Total price:
+                                </li>
+                            </ul>
+                        </div>
+                        <h2>Shipment</h2>
+                        <p>
+                            Estimated arrival:
+                        </p>
+                    </div>
+                </div>
                 <ul class="sneakers-list">
                     <li class="sneakers-list__item reveal fade-left">
                         <h2>New</h2>
                         <p>
                             AIR JORDAN 1 MID LIGHT SMOKE GREY
                         </p>
-                        <div class="link">
-                            <a href="#" aria-label="Icon link to modal window">
+                        <div class="link modal-link">
+                            <a aria-label="Icon link to modal window">
                                 <svg class="icon">
                                     <use xlink:href="img/sprite.svg#new-link-icon"></use>
                                 </svg>
@@ -155,8 +198,8 @@
                         <p>
                             Air Max 200 SE
                         </p>
-                        <div class="link">
-                            <a href="#" aria-label="Icon link to modal window">
+                        <div class="link modal-link">
+                            <a aria-label="Icon link to modal window">
                                 <svg class="icon">
                                     <use xlink:href="img/sprite.svg#new-link-icon"></use>
                                 </svg>
@@ -195,7 +238,7 @@
                             <img src="./img/topsneakers-image-1.png" alt="AirMax sneakers back yellow">
                             <h3>Air Max 97</h3>
                             <span>$20.99</span>
-                            <a class="link" href="#" aria-label="Icon link to modal window">
+                            <a class="link modal-link" aria-label="Icon link to modal window">
                                 <svg class="icon">
                                     <use xlink:href="img/sprite.svg#new-link-icon"></use>
                                 </svg>
@@ -205,7 +248,7 @@
                             <img src="./img/topsneakers-image-2.png" alt="React Presto sneakers blue red">
                             <h3>React Presto</h3>
                             <span>$20.99</span>
-                            <a class="link" href="#" aria-label="Icon link to modal window">
+                            <a class="link modal-link" aria-label="Icon link to modal window">
                                 <svg class="icon">
                                     <use xlink:href="img/sprite.svg#new-link-icon"></use>
                                 </svg>
@@ -215,7 +258,7 @@
                             <img src="./img/topsneakers-image-3.png" alt="AirMax sneakers back yellow">
                             <h3>Air Max 97</h3>
                             <span>$20.99</span>
-                            <a class="link" href="#" aria-label="Icon link to modal window">
+                            <a class="link modal-link" aria-label="Icon link to modal window">
                                 <svg class="icon">
                                     <use xlink:href="img/sprite.svg#new-link-icon"></use>
                                 </svg>
@@ -225,7 +268,7 @@
                             <img src="./img/topsneakers-image-1.png" alt="AirMax sneakers back yellow">
                             <h3>Air Max 97</h3>
                             <span>$20.99</span>
-                            <a class="link" href="#" aria-label="Icon link to modal window">
+                            <a class="link modal-link" aria-label="Icon link to modal window">
                                 <svg class="icon">
                                     <use xlink:href="img/sprite.svg#new-link-icon"></use>
                                 </svg>
@@ -235,7 +278,7 @@
                             <img src="./img/topsneakers-image-2.png" alt="React Presto sneakers blue red">
                             <h3>React Presto</h3>
                             <span>$20.99</span>
-                            <a class="link" href="#" aria-label="Icon link to modal window">
+                            <a class="link modal-link" aria-label="Icon link to modal window">
                                 <svg class="icon">
                                     <use xlink:href="img/sprite.svg#new-link-icon"></use>
                                 </svg>
@@ -245,7 +288,7 @@
                             <img src="./img/topsneakers-image-3.png" alt="AirMax sneakers back yellow">
                             <h3>Air Max 97</h3>
                             <span>$20.99</span>
-                            <a class="link" href="#" aria-label="Icon link to modal window">
+                            <a class="link modal-link" aria-label="Icon link to modal window">
                                 <svg class="icon">
                                     <use xlink:href="img/sprite.svg#new-link-icon"></use>
                                 </svg>
@@ -263,19 +306,19 @@
                 <div class="text">
                     <h3>Workout</h3>
                 </div>
-                <img class="reveal fade-right" src="./img/category-image-1.png" alt="Woman to do exersices">
+                <img src="./img/category-image-1.png" alt="Woman to do exersices">
             </div>
             <div class="category-2">
                 <div class="text">
                     <h3>Run</h3>
                 </div>
-                <img class="reveal fade-left" src="./img/category-image-2.png" alt="There are two man runs">
+                <img src="./img/category-image-2.png" alt="There are two man runs">
             </div>
             <div class="category-3">
                 <div class="text">
                     <h3>Football</h3>
                 </div>
-                <img class="reveal fade-right" src="./img/category-image-3.png" alt="People play football">
+                <img src="./img/category-image-3.png" alt="People play football">
             </div>
         </section>
         <section class="discount">
@@ -296,8 +339,8 @@
                         <img src="./img/discount-image-1.png" alt="Sneakers back grey">
                         <h3>-20% Discount</h3>
                         <p>on your first purchase</p>
-                        <div class="link">
-                            <a href="#" aria-label="Icon link to modal window">
+                        <div class="link modal-link">
+                            <a aria-label="Icon link to modal window">
                                 <svg class="icon">
                                     <use xlink:href="img/sprite.svg#new-link-icon"></use>
                                 </svg>
@@ -309,8 +352,8 @@
                         <img src="./img/discount-image-2.png" alt="Sneakers white green">
                         <h3>-20% Discount</h3>
                         <p>on your first purchase</p>
-                        <div class="link">
-                            <a href="#" aria-label="Icon link to modal window">
+                        <div class="link modal-link">
+                            <a aria-label="Icon link to modal window">
                                 <svg class="icon">
                                     <use xlink:href="img/sprite.svg#new-link-icon"></use>
                                 </svg>
