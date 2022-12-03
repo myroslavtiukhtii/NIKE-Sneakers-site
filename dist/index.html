@@ -104,7 +104,7 @@
                         </svg>
                     </a>
                 </li>
-                <li class="icon-list__item">
+                <li class="icon-list__item" id="basketBtn">
                     <a href="#" aria-label="Icon basket">
                         <svg class="icon">
                             <use xlink:href="img/sprite.svg#header-icon-basket"></use>
@@ -112,6 +112,16 @@
                     </a>
                 </li>
             </ul>
+            <div class="basket">
+                <h2>Items:</h2>
+                <ul class="items-list">
+                    <li class="items-list__item">
+                        <p>Quantity:</p>
+                        <p>Price:</p>
+                    </li>
+                </ul>
+                <p>Total price:</p>
+            </div>
         </div>
     </header>
     <main>
@@ -346,7 +356,7 @@
                                 </svg>
                             </a>
                         </div>
-                        <button>Shop now</button>
+                        <button class="modal-link">Shop now</button>
                     </li>
                     <li class="sneakers-list__item">
                         <img src="./img/discount-image-2.png" alt="Sneakers white green">
@@ -359,7 +369,7 @@
                                 </svg>
                             </a>
                         </div>
-                        <button>Shop now</button>
+                        <button class="modal-link">Shop now</button>
                     </li>
                 </ul>
                 <h2>More Nike products</h2>
