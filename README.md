@@ -1,11 +1,11 @@
-## :pushpin: Architecture-studio
+## :pushpin: Sneakers site
 #### :memo: Description: 
 
 Home page of Product company website.
 ___
 
 #### :link: Live Demo: 
-[SITE](https://myroslavtiukhtii.github.io/architecture-studio/dist/)
+[SITE](https://myroslavtiukhtii.github.io/Sneakers-site/dist/)
 
 [Design](The Free Library)
 ___
