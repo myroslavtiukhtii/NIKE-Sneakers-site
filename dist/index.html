@@ -112,20 +112,6 @@
                     </a>
                 </li>
             </ul>
-            <div class="basket">
-                <h2>Items:</h2>
-                <ul class="items-list">
-                    <li class="items-list__item">
-                        <p>Quantity:</p>
-                        <p>Price:</p>
-                    </li>
-                </ul>
-                <p>Total price:</p>
-                <div class="buttons">
-                    <button>Order</button>
-                    <button id="closeBasket">Close</button>
-                </div>
-            </div>
         </div>
     </header>
     <main>
@@ -151,6 +137,57 @@
             </div>
         </section>
         <section class="new">
+            <div class="container">
+                <div id="success">
+                    <h2>Thank you!</h2>
+                    <h3 class="name"></h3>
+                    <div class="buttons">
+                        <button id="btnCloseMdlSuc">Ok!</button>
+                    </div>
+                </div>
+                <div class="modal-email">
+                    <label for="text">Your name:</label>
+                    <input type="text" id="text" name="text">
+                    <label for="email">Enter your email:</label>
+                    <input type="email" id="email" name="email">
+                    <div class="buttons">
+                        <button class="btnName">Send</button>
+                        <button id="cancelMail">Cancel</button>
+                    </div>
+                </div>
+                <ul class="sneakers-list">
+                    <li class="sneakers-list__item reveal fade-bottom">
+                        <h2>New</h2>
+                        <p>
+                            AIR JORDAN 1 MID LIGHT SMOKE GREY
+                        </p>
+                        <div class="link modal-link">
+                            <a aria-label="Icon link to modal window">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#new-link-icon"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <img src="./img/new-image-1.png" alt="Air Jordan Sneakers Light smoke grey">
+                    </li>
+                    <li class="sneakers-list__item reveal fade-bottom">
+                        <h2>New</h2>
+                        <p>
+                            Air Max 200 SE
+                        </p>
+                        <div class="link modal-link">
+                            <a aria-label="Icon link to modal window">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#new-link-icon"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <img src="./img/new-image-2.png" alt="Air Max sneakers Red White">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="topsneakers">
             <div class="container">
                 <div class="modal" id="modal-window">
                     <button id="close-window">
@@ -191,53 +228,26 @@
                             Estimated arrival:
                         </p>
                         <div class="buttons">
-                            <button>Order</button>
+                            <button id="orderProduct">Add to cart</button>
                             <button id="cancel-order">Cancel</button>
                         </div>
                     </div>
                 </div>
-                <div class="modal-email">
-                    <label for="email">Enter your email:</label>
-                    <input type="email" id="email" name="email">
+                <div class="basket">
+                    <h2>No Cart items</h2>
+                    <ul class="items-list">
+                        <li class="items-list__item">
+                            <p>{{ cart.name }}:</p>
+                            <p>{{ cart.price }}:</p>
+                            <span></span>
+                        </li>
+                    </ul>
+                    <p>{{ totalPrice }}: </p>
                     <div class="buttons">
-                        <button>Send</button>
-                        <button id="cancelMail">Cancel</button>
+                        <button>Order</button>
+                        <button id="closeBasket">Close</button>
                     </div>
                 </div>
-                <ul class="sneakers-list">
-                    <li class="sneakers-list__item reveal fade-left">
-                        <h2>New</h2>
-                        <p>
-                            AIR JORDAN 1 MID LIGHT SMOKE GREY
-                        </p>
-                        <div class="link modal-link">
-                            <a aria-label="Icon link to modal window">
-                                <svg class="icon">
-                                    <use xlink:href="img/sprite.svg#new-link-icon"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <img src="./img/new-image-1.png" alt="Air Jordan Sneakers Light smoke grey">
-                    </li>
-                    <li class="sneakers-list__item reveal fade-right">
-                        <h2>New</h2>
-                        <p>
-                            Air Max 200 SE
-                        </p>
-                        <div class="link modal-link">
-                            <a aria-label="Icon link to modal window">
-                                <svg class="icon">
-                                    <use xlink:href="img/sprite.svg#new-link-icon"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <img src="./img/new-image-2.png" alt="Air Max sneakers Red White">
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="topsneakers">
-            <div class="container">
                 <div class="titles">
                     <h2>At the moment</h2>
                     <h3>Summertime mood</h3>
@@ -262,8 +272,12 @@
                     <div class="sneakers-list my-slider">
                         <div class="sneakers-list__item">
                             <img src="./img/topsneakers-image-1.png" alt="AirMax sneakers back yellow">
-                            <h3>Air Max 97</h3>
-                            <span>$20.99</span>
+                            <h3>
+                                Air Max 97
+                            </h3>
+                            <span>
+                                $20.99
+                            </span>
                             <a class="link modal-link" aria-label="Icon link to modal window">
                                 <svg class="icon">
                                     <use xlink:href="img/sprite.svg#new-link-icon"></use>
@@ -426,6 +440,7 @@
             </div>
         </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="./js/script.min.js"></script>
 </body>
