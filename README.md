@@ -5,7 +5,7 @@ Home page of Product company website.
 ___
 
 #### :link: Live Demo: 
-[productly](https://myroslavtiukhtii.github.io/Sneakers-site/dist/)
+[SITE](https://myroslavtiukhtii.github.io/Sneakers-site/dist/)
 
 [Design](The Free Library)
 ___
