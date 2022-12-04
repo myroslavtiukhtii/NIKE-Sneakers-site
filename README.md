@@ -14,7 +14,7 @@ ___
 
 * HTML
 * CSS
-* methodology [BEM](https://en.bem.info/)
+* methodology [BEM]
 * Javascript
 * SASS
 * Node.js
