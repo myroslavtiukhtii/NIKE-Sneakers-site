@@ -146,10 +146,10 @@
                     </div>
                 </div>
                 <div class="modal-email">
-                    <label for="text">Your name:</label>
-                    <input type="text" id="text" name="text">
-                    <label for="email">Enter your email:</label>
-                    <input type="email" id="email" name="email">
+                    <label for="text">Your name:*</label>
+                    <input type="text" id="text" name="text" required>
+                    <label for="email">Enter your email:*</label>
+                    <input type="email" id="email" name="email" required>
                     <div class="buttons">
                         <button class="btnName">Send</button>
                         <button id="cancelMail">Cancel</button>
@@ -194,7 +194,7 @@
                         <i class="fa-regular fa-rectangle-xmark"></i>
                     </button>
                     <div class="header">
-                        <h2>Items details</h2>
+                        <h2>Items details:</h2>
                         <div class="item-details">
                             <img src="" alt="">
                             <div class="about">
@@ -206,26 +206,26 @@
                                 </p>
                             </div>
                         </div>
-                        <h2>Order details</h2>
+                        <h2>Order details:</h2>
                         <div class="order-details">
                             <ul class="order-details-list">
                                 <li class="order-details-list__item">
                                     Order number:
+                                    <span id="orderNumber"></span>
                                 </li>
-                                <li class="order-details-list__item">
+                                <li class="order-details-list__item" >
                                     Date:
+                                    <span id="date"></span>
                                 </li>
                                 <li class="order-details-list__item">
                                     Price:
                                 </li>
-                                <li class="order-details-list__item">
-                                    Total price:
-                                </li>
                             </ul>
                         </div>
-                        <h2>Shipment</h2>
+                        <h2>Shipment:</h2>
                         <p>
                             Estimated arrival:
+                            <span id="arrival"></span>
                         </p>
                         <div class="buttons">
                             <button id="orderProduct">Add to cart</button>
@@ -276,7 +276,7 @@
                                 Air Max 97
                             </h3>
                             <span>
-                                $20.99
+                                $120.99
                             </span>
                             <a class="link modal-link" aria-label="Icon link to modal window">
                                 <svg class="icon">
@@ -287,7 +287,7 @@
                         <div class="sneakers-list__item">
                             <img src="./img/topsneakers-image-2.png" alt="React Presto sneakers blue red">
                             <h3>React Presto</h3>
-                            <span>$20.99</span>
+                            <span>$220.99</span>
                             <a class="link modal-link" aria-label="Icon link to modal window">
                                 <svg class="icon">
                                     <use xlink:href="img/sprite.svg#new-link-icon"></use>
@@ -297,7 +297,7 @@
                         <div class="sneakers-list__item">
                             <img src="./img/topsneakers-image-3.png" alt="AirMax sneakers back yellow">
                             <h3>Air Max 97</h3>
-                            <span>$20.99</span>
+                            <span>$203.99</span>
                             <a class="link modal-link" aria-label="Icon link to modal window">
                                 <svg class="icon">
                                     <use xlink:href="img/sprite.svg#new-link-icon"></use>
@@ -307,7 +307,7 @@
                         <div class="sneakers-list__item">
                             <img src="./img/topsneakers-image-1.png" alt="AirMax sneakers back yellow">
                             <h3>Air Max 97</h3>
-                            <span>$20.99</span>
+                            <span>$240.99</span>
                             <a class="link modal-link" aria-label="Icon link to modal window">
                                 <svg class="icon">
                                     <use xlink:href="img/sprite.svg#new-link-icon"></use>
@@ -317,7 +317,7 @@
                         <div class="sneakers-list__item">
                             <img src="./img/topsneakers-image-2.png" alt="React Presto sneakers blue red">
                             <h3>React Presto</h3>
-                            <span>$20.99</span>
+                            <span>$120.99</span>
                             <a class="link modal-link" aria-label="Icon link to modal window">
                                 <svg class="icon">
                                     <use xlink:href="img/sprite.svg#new-link-icon"></use>
@@ -327,7 +327,7 @@
                         <div class="sneakers-list__item">
                             <img src="./img/topsneakers-image-3.png" alt="AirMax sneakers back yellow">
                             <h3>Air Max 97</h3>
-                            <span>$20.99</span>
+                            <span>$520.99</span>
                             <a class="link modal-link" aria-label="Icon link to modal window">
                                 <svg class="icon">
                                     <use xlink:href="img/sprite.svg#new-link-icon"></use>
