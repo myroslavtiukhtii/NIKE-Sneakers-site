@@ -25,5 +25,5 @@ ___
 ___
 
 #### :envelope: Contacts
-* LinkedIn: [@myroslavchik](https://www.linkedin.com/in/myroslav-t-979a17229)
-* Telegram: [@myroslavchik](https://t.me/myroslavtiukhtii)
+* LinkedIn: [@myroslavtiukhtii](https://www.linkedin.com/in/myroslav-t-979a17229)
+* Telegram: [@myroslavtiukhtii](https://t.me/myroslavtiukhtii)
