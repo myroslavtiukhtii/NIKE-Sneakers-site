@@ -105,6 +105,7 @@
                     </a>
                 </li>
                 <li class="icon-list__item" id="basketBtn">
+                    <p id="basketItems"></p>
                     <a href="#" aria-label="Icon basket">
                         <svg class="icon">
                             <use xlink:href="img/sprite.svg#header-icon-basket"></use>
@@ -203,6 +204,22 @@
                                     Price:
                                     <span id="modalPrice"></span>
                                 </li>
+                                <li class="order-details-list__item">
+                                    Quantity:
+                                    <span id="quantity"></span>
+                                    <div class="buttons">
+                                        <button id="minusItem">
+                                            -
+                                        </button>
+                                        <button id="plusItem">
+                                            +
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="order-details-list__item">
+                                    Total price:
+                                        <span id="modalTotalPrice"></span>
+                                </li>
                             </ul>
                         </div>
                         <h2>Shipment:</h2>
@@ -219,14 +236,18 @@
                 <div class="basket">
                     <ul class="items-list">
                         <li class="items-list__item">
-                            <p>Name:</p>
+                            <p>Items:
+                                <span id="itemsCard"></span>
+                            </p>
                         </li>
                     </ul>
-                    <p>Total price:</p>
-                    <p id="totalPrice"></p>
+                    <p>Total price:
+                        <span id="totalPrice"></span>
+                    </p>
                     <div class="buttons">
-                        <button>Order</button>
+                        <button id="orderBasket">Order</button>
                         <button id="closeBasket">Close</button>
+                        <button id="resetBasket">Reset</button>
                     </div>
                 </div>
                 <div class="titles">
@@ -253,7 +274,7 @@
                     <div class="sneakers-list my-slider">
                         <div class="sneakers-list__item">
                             <img src="./img/topsneakers-image-1.png" alt="AirMax sneakers back yellow">
-                            <h3 class="name-product">
+                            <h3 class="productName">
                                 Air Max UA
                             </h3>
                             <a class="link modal-link" aria-label="Icon link to modal window">
@@ -265,7 +286,7 @@
                         </div>
                         <div class="sneakers-list__item">
                             <img src="./img/topsneakers-image-2.png" alt="React Presto sneakers blue red">
-                            <h3 class="name-product">React Presto WW</h3>
+                            <h3 class="productName">React Presto WW</h3>
                             <a class="link modal-link" aria-label="Icon link to modal window">
                                 $220.99
                                 <svg class="icon">
@@ -275,7 +296,7 @@
                         </div>
                         <div class="sneakers-list__item">
                             <img src="./img/topsneakers-image-3.png" alt="AirMax sneakers back yellow">
-                            <h3 class="name-product">Air Max SD</h3>
+                            <h3 class="productName">Air Max SD</h3>
                             <a class="link modal-link" aria-label="Icon link to modal window">
                                 $203.99
                                 <svg class="icon">
@@ -285,7 +306,7 @@
                         </div>
                         <div class="sneakers-list__item">
                             <img src="./img/topsneakers-image-1.png" alt="AirMax sneakers back yellow">
-                            <h3 class="name-product">Air Max BV</h3>
+                            <h3 class="productName">Air Max BV</h3>
                             <a class="link modal-link" aria-label="Icon link to modal window">
                                 $240.99
                                 <svg class="icon">
@@ -295,7 +316,7 @@
                         </div>
                         <div class="sneakers-list__item">
                             <img src="./img/topsneakers-image-2.png" alt="React Presto sneakers blue red">
-                            <h3 class="name-product">React Presto RT</h3>
+                            <h3 class="productName">React Presto RT</h3>
                             <a class="link modal-link" aria-label="Icon link to modal window">
                                 $120.99
                                 <svg class="icon">
@@ -305,7 +326,7 @@
                         </div>
                         <div class="sneakers-list__item">
                             <img src="./img/topsneakers-image-3.png" alt="AirMax sneakers back yellow">
-                            <h3 class="name-product">Air Max SS</h3>
+                            <h3 class="productName">Air Max SS</h3>
                             <a class="link modal-link" aria-label="Icon link to modal window">
                                 $520.99
                                 <svg class="icon">
@@ -358,27 +379,13 @@
                         <img src="./img/discount-image-1.png" alt="Sneakers back grey">
                         <h3>-20% Discount</h3>
                         <p>on your first purchase</p>
-                        <div class="link modal-link">
-                            <a aria-label="Icon link to modal window">
-                                <svg class="icon">
-                                    <use xlink:href="img/sprite.svg#new-link-icon"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <button class="modal-link">Shop now</button>
+                        <button>Shop now</button>
                     </li>
                     <li class="sneakers-list__item">
                         <img src="./img/discount-image-2.png" alt="Sneakers white green">
                         <h3>-20% Discount</h3>
                         <p>on your first purchase</p>
-                        <div class="link modal-link">
-                            <a aria-label="Icon link to modal window">
-                                <svg class="icon">
-                                    <use xlink:href="img/sprite.svg#new-link-icon"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <button class="modal-link">Shop now</button>
+                        <button>Shop now</button>
                     </li>
                 </ul>
                 <h2>More Nike products</h2>
