@@ -147,14 +147,16 @@
                     </div>
                 </div>
                 <div class="modal-email">
-                    <label for="text">Your name:*</label>
-                    <input type="text" id="text" name="text" required>
-                    <label for="email">Enter your email:*</label>
-                    <input type="email" id="email" name="email" required>
-                    <div class="buttons">
-                        <button class="btnName">Send</button>
-                        <button id="cancelMail">Cancel</button>
-                    </div>
+                    <form action="#">
+                        <div class="modal-email__title" for="text">Your name:*</div>
+                        <input type="text" id="text" required>
+                        <div class="modal-email__title" for="email">Enter your email:*</div>
+                        <input type="email" id="email" required>
+                        <div class="buttons">
+                            <button class="btnName">Send</button>
+                            <button id="cancelMail">Cancel</button>
+                        </div>
+                    </form>
                 </div>
                 <ul class="sneakers-list">
                     <li class="sneakers-list__item reveal fade-bottom">
@@ -349,19 +351,19 @@
                 <div class="text">
                     <h3>Workout</h3>
                 </div>
-                <img src="./img/category-image-1.png" alt="Woman to do exersices">
+                <img class="reveal fade-bottom" src="./img/category-image-1.png" alt="Woman to do exersices">
             </div>
             <div class="category-2">
                 <div class="text">
                     <h3>Run</h3>
                 </div>
-                <img src="./img/category-image-2.png" alt="There are two man runs">
+                <img class="reveal fade-bottom" src="./img/category-image-2.png" alt="There are two man runs">
             </div>
             <div class="category-3">
                 <div class="text">
                     <h3>Football</h3>
                 </div>
-                <img src="./img/category-image-3.png" alt="People play football">
+                <img class="reveal fade-bottom" src="./img/category-image-3.png" alt="People play football">
             </div>
         </section>
         <section class="discount">
