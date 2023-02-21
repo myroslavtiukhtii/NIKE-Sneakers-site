@@ -146,17 +146,19 @@
                         <button id="btnCloseMdlSuc">Ok!</button>
                     </div>
                 </div>
-                <div class="modal-email">
-                    <form action="#">
-                        <div class="modal-email__title" for="text">Your name:*</div>
-                        <input type="text" id="text" required>
-                        <div class="modal-email__title" for="email">Enter your email:*</div>
-                        <input type="email" id="email" required>
-                        <div class="buttons">
-                            <button class="btnName">Send</button>
-                            <button id="cancelMail">Cancel</button>
-                        </div>
-                    </form>
+                <div class="modal-email__back">
+                    <div class="modal-email">
+                        <form action="#">
+                            <div class="modal-email__title">Your name:*</div>
+                            <input type="text" id="text" required>
+                            <div class="modal-email__title">Enter your email:*</div>
+                            <input type="email" id="email" required>
+                            <div class="buttons">
+                                <button type="button" class="btnName">Send</button>
+                                <button type="button" id="cancelMail">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <ul class="sneakers-list">
                     <li class="sneakers-list__item reveal fade-bottom">
@@ -178,62 +180,64 @@
         </section>
         <section class="topsneakers">
             <div class="container">
-                <div class="modal" id="modal-window">
-                    <button id="close-window">
-                        <i class="fa-regular fa-rectangle-xmark"></i>
-                    </button>
-                    <div class="header">
-                        <h2>Items details:</h2>
-                        <div class="item-details">
-                            <div class="about">
-                                <p>
-                                    Product:
-                                    <span id="product"></span>
-                                    <img id="productPicture" src="" alt="">
-                                </p>
+                <div class="topsneakers__modal--back">
+                    <div class="modal">
+                        <button id="close-window">
+                            <i class="fa-regular fa-rectangle-xmark"></i>
+                        </button>
+                        <div class="header">
+                            <h2>Items details:</h2>
+                            <div class="item-details">
+                                <div class="about">
+                                    <p>
+                                        Product:
+                                        <span id="product"></span>
+                                        <img id="productPicture" src="" alt="">
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <h2>Order details:</h2>
-                        <div class="order-details">
-                            <ul class="order-details-list">
-                                <li class="order-details-list__item">
-                                    Order number:
-                                    <span id="orderNumber"></span>
-                                </li>
-                                <li class="order-details-list__item" >
-                                    Date:
-                                    <span id="date"></span>
-                                </li>
-                                <li class="order-details-list__item">
-                                    Price:
-                                    <span id="modalPrice"></span>
-                                </li>
-                                <li class="order-details-list__item">
-                                    Quantity:
-                                    <span id="quantity"></span>
-                                    <div class="buttons">
-                                        <button id="minusItem">
+                            <h2>Order details:</h2>
+                            <div class="order-details">
+                                <ul class="order-details-list">
+                                    <li class="order-details-list__item">
+                                        Order number:
+                                        <span id="orderNumber"></span>
+                                    </li>
+                                    <li class="order-details-list__item" >
+                                        Date:
+                                        <span id="date"></span>
+                                    </li>
+                                    <li class="order-details-list__item">
+                                        Price:
+                                        <span id="modalPrice"></span>
+                                    </li>
+                                    <li class="order-details-list__item">
+                                        Quantity:
+                                        <span id="quantity"></span>
+                                    </li>
+                                    <li class="buttons">
+                                        <button class="order-details__buttons" id="minusItem">
                                             -
                                         </button>
-                                        <button id="plusItem">
+                                        <button class="order-details__buttons" id="plusItem">
                                             +
                                         </button>
-                                    </div>
-                                </li>
-                                <li class="order-details-list__item">
-                                    Total price:
-                                        <span id="modalTotalPrice"></span>
-                                </li>
-                            </ul>
-                        </div>
-                        <h2>Shipment:</h2>
-                        <p>
-                            Estimated arrival:
-                            <span id="arrival"></span>
-                        </p>
-                        <div class="buttons">
-                            <button id="orderProduct">Add to cart</button>
-                            <button id="cancel-order">Cancel</button>
+                                    </li>
+                                    <li class="order-details-list__item">
+                                        Total price:
+                                            <span id="modalTotalPrice"></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h2>Shipment:</h2>
+                            <p>
+                                Estimated arrival:
+                                <span id="arrival"></span>
+                            </p>
+                            <div class="buttons">
+                                <button type="button" id="orderProduct">Add to cart</button>
+                                <button type="button" id="cancel-order">Cancel</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -242,7 +246,7 @@
                         <li class="items-list__item">
                             <ul class="items">
                                 <li id="itemsCard"></li>
-                                <li id="itemsImg"></li>
+                                <ul class="basket-items__list"></ul>
                             </ul>
                         </li>
                     </ul>
@@ -263,7 +267,7 @@
                 <div class="sliders">
                     <div class="head">
                         <h3>Top sneakers</h3>
-                        <div class="buttons" id="customize-controls">
+                        <div class="sliders__buttons" id="customize-controls">
                             <button class="prev" aria-label="Button prev gallery sneakers">
                                 <svg class="icon">
                                     <use xlink:href="img/sprite.svg#button-arrow"></use>
@@ -276,70 +280,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="sneakers-list my-slider">
-                        <div class="sneakers-list__item">
-                            <img class="picture" src="./img/topsneakers-image-1.png" alt="AirMax sneakers back yellow">
-                            <h3 class="productName">
-                                Air Maxi
-                            </h3>
-                            <a class="link modal-link" aria-label="Icon link to modal window">
-                                $120
-                                <svg class="icon">
-                                    <use xlink:href="img/sprite.svg#new-link-icon"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="sneakers-list__item">
-                            <img class="picture" src="./img/topsneakers-image-2.png" alt="React Presto sneakers blue red">
-                            <h3 class="productName">React Gusto</h3>
-                            <a class="link modal-link" aria-label="Icon link to modal window">
-                                $220
-                                <svg class="icon">
-                                    <use xlink:href="img/sprite.svg#new-link-icon"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="sneakers-list__item">
-                            <img class="picture" src="./img/topsneakers-image-3.png" alt="AirMax sneakers back yellow">
-                            <h3 class="productName">Air Mini</h3>
-                            <a class="link modal-link" aria-label="Icon link to modal window">
-                                $203
-                                <svg class="icon">
-                                    <use xlink:href="img/sprite.svg#new-link-icon"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="sneakers-list__item">
-                            <img class="picture" src="./img/topsneakers-image-1.png" alt="AirMax sneakers back yellow">
-                            <h3 class="productName">Air Super</h3>
-                            <a class="link modal-link" aria-label="Icon link to modal window">
-                                $240
-                                <svg class="icon">
-                                    <use xlink:href="img/sprite.svg#new-link-icon"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="sneakers-list__item">
-                            <img class="picture" src="./img/topsneakers-image-2.png" alt="React Presto sneakers blue red">
-                            <h3 class="productName">Reactis Peresto</h3>
-                            <a class="link modal-link" aria-label="Icon link to modal window">
-                                $120
-                                <svg class="icon">
-                                    <use xlink:href="img/sprite.svg#new-link-icon"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="sneakers-list__item">
-                            <img class="picture" src="./img/topsneakers-image-3.png" alt="AirMax sneakers back yellow">
-                            <h3 class="productName">Maxis Super</h3>
-                            <a class="link modal-link" aria-label="Icon link to modal window">
-                                $520
-                                <svg class="icon">
-                                    <use xlink:href="img/sprite.svg#new-link-icon"></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
+                    <div class="topsneakers__list my-slider"></div>
                 </div>
             </div>
         </section>
